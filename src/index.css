@@ -1,0 +1,29 @@
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  background: #f8f8fa;
+  color: #202124;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+.card {
+  @apply bg-white rounded-xl border border-gray-200 shadow-sm p-5;
+}
+
+.primary-btn {
+  @apply bg-t1 text-white px-4 py-2 rounded-lg hover:bg-red-700;
+}
