@@ -1,5 +1,4 @@
 
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -21,9 +20,54 @@ button {
 }
 
 .card {
-  @apply bg-white rounded-xl border border-gray-200 shadow-sm p-5;
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.75rem;
+  box-shadow: 0 1px 2px rgb(0 0 0 / 0.05);
+  padding: 1.25rem;
 }
 
 .primary-btn {
-  @apply bg-t1 text-white px-4 py-2 rounded-lg hover:bg-red-700;
+  background-color: #E2012D;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  transition: background-color 150ms;
 }
+
+.primary-btn:hover {
+  background-color: #b91c1c;
+}
+
+.secondary-btn {
+  background-color: #f3f4f6;
+  color: #374151;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  transition: background-color 150ms;
+}
+
+.secondary-btn:hover {
+  background-color: #e5e7eb;
+}
+
+.nav-link {
+  display: block;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  color: #4b5563;
+  transition: color 150ms, background-color 150ms;
+}
+
+.nav-link:hover {
+  background-color: #fef2f2;
+  color: #E2012D;
+}
+
+.nav-link.active {
+  background-color: #fef2f2;
+  color: #E2012D;
+  font-weight: bold;
+}
+
+
